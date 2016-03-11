@@ -1,163 +1,163 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<!DOCTYPE courses SYSTEM "timetable.dtd">
+<!DOCTYPE courses SYSTEM "schedule.dtd">
 <courses>
-    <course code="COMP 4985">
+    <course code="COMP4985">
         <booking>
             <instructor>Aman Abdulla</instructor>
-            <location>SE12 323</location>
-            <classtype>LectureLab</classtype>
-            <dayofweek>Monday</dayofweek>
+            <bookingroom>SE12 323</bookingroom>
+            <type>LectureLab</type>
+            <day>Monday</day>
             <time>930</time>
         </booking>
     </course>
 
-    <course code="COMP 4735">
+    <course code="COMP4735">
         <booking>
             <instructor>Mirela Gutica</instructor>
-            <location>SW1 1205</location>
-            <classtype>Lecture</classtype>
-            <dayofweek>Monday</dayofweek>
+            <bookingroom>SW1 1205</bookingroom>
+            <type>Lecture</type>
+            <day>Monday</day>
             <time>1130</time>
         </booking>
     </course>
 
-    <course code="BLAW 3600">
+    <course code="BLAW3600">
         <booking>
             <instructor>Catherine Ryan</instructor>
-            <location>SW9 127</location>
-            <classtype>Lab</classtype>
-            <dayofweek>Monday</dayofweek>
+            <bookingroom>SW9 127</bookingroom>
+            <type>Lab</type>
+            <day>Monday</day>
             <time>1230</time>
         </booking>
     </course>
 
-    <course code="COMP 4560">
+    <course code="COMP4560">
         <booking>
             <instructor>Joseph Lo</instructor>
-            <location>SE12 320</location>
-            <classtype>Lab</classtype>
-            <dayofweek>Monday</dayofweek>
+            <bookingroom>SE12 320</bookingroom>
+            <type>Lab</type>
+            <day>Monday</day>
             <time>1530</time>
         </booking>
     </course>
 
-    <course code="COMP 4981">
+    <course code="COMP4981">
         <booking>
             <instructor>Aman Abdulla</instructor>
-            <location>SE12 323</location>
-            <classtype>LectureLab</classtype>
-            <dayofweek>Tuesday</dayofweek>
+            <bookingroom>SE12 323</bookingroom>
+            <type>LectureLab</type>
+            <day>Tuesday</day>
             <time>930</time>
         </booking>
     </course>
 
-    <course code="COMP 4711">
+    <course code="COMP4711">
         <booking>
             <instructor>Brenda Fine</instructor>
-            <location>SW5 1850</location>
-            <classtype>Lecture</classtype>
-            <dayofweek>Tuesday</dayofweek>
+            <bookingroom>SW5 1850</bookingroom>
+            <type>Lecture</type>
+            <day>Tuesday</day>
             <time>1130</time>
         </booking>
     </course>
 
-    <course code="COMP 4711">
+    <course code="COMP4711">
         <booking>
             <instructor>James Parry</instructor>
-            <location>SW5 1840</location>
-            <classtype>Lecture</classtype>
-            <dayofweek>Tuesday</dayofweek>
+            <bookingroom>SW5 1840</bookingroom>
+            <type>Lecture</type>
+            <day>Tuesday</day>
             <time>1430</time>
         </booking>
     </course>
 
 
-    <course code="COMP 4711">
+    <course code="COMP4711">
         <booking>
             <instructor>James Parry</instructor>
-            <location>SE12 3231</location>
-            <classtype>Lab</classtype>
-            <dayofweek>Tuesday</dayofweek>
+            <bookingroom>SE12 3231</bookingroom>
+            <type>Lab</type>
+            <day>Tuesday</day>
             <time>1530</time>
         </booking>
     </course>
 
-    <course code="COMP 4985">
+    <course code="COMP4985">
         <booking>
             <instructor>Aman Abdulla</instructor>
-            <location>SE12 323</location>
-            <classtype>LabLecture</classtype>
-            <dayofweek>Wednesday</dayofweek>
+            <bookingroom>SE12 323</bookingroom>
+            <type>LabLecture</type>
+            <day>Wednesday</day>
             <time>930</time>
         </booking>
     </course>
 
-    <course code="COMP 4985">
+    <course code="COMP4985">
         <booking>
             <instructor>Aman Abdulla</instructor>
-            <location>SE12 323</location>
-            <classtype>LabLecture</classtype>
-            <dayofweek>Wednesday</dayofweek>
+            <bookingroom>SE12 323</bookingroom>
+            <type>LabLecture</type>
+            <day>Wednesday</day>
             <time>1130</time>
         </booking>
     </course>
 
-    <course code="COMP 4735">
+    <course code="COMP4735">
         <booking>
             <instructor>Mirela Gutica</instructor>
-            <location>SW1 1205</location>
-            <classtype>Lecture</classtype>
-            <dayofweek>Wednesday</dayofweek>
+            <bookingroom>SW1 1205</bookingroom>
+            <type>Lecture</type>
+            <day>Wednesday</day>
             <time>1330</time>
         </booking>
     </course>
 
-    <course code="COMP 4981">
+    <course code="COMP4981">
         <booking>
             <instructor>Aman Abdulla</instructor>
-            <location>SE12 323</location>
-            <classtype>LabLecture</classtype>
-            <dayofweek>Thursday</dayofweek>
+            <bookingroom>SE12 323</bookingroom>
+            <type>LabLecture</type>
+            <day>Thursday</day>
             <time>930</time>
         </booking>
     </course>
 
-    <course code="COMP 4735">
+    <course code="COMP4735">
         <booking>
             <instructor>Mirela Gutica</instructor>
-            <location>SW3 1710</location>
-            <classtype>Lecture</classtype>
-            <dayofweek>Thursday</dayofweek>
+            <bookingroom>SW3 1710</bookingroom>
+            <type>Lecture</type>
+            <day>Thursday</day>
             <time>1130</time>
         </booking>
     </course>
 
-    <course code="COMP 4735">
+    <course code="COMP4735">
         <booking>
             <instructor>Mirela Gutica</instructor>
-            <location>SE12 322</location>
-            <classtype>Lab</classtype>
-            <dayofweek>Thursday</dayofweek>
+            <bookingroom>SE12 322</bookingroom>
+            <type>Lab</type>
+            <day>Thursday</day>
             <time>1530</time>
         </booking>
     </course>
 
-    <course code="BLAW 3600">
+    <course code="BLAW3600">
         <booking>
             <instructor>Catherine Ryan</instructor>
-            <location>SW5 1840</location>
-            <classtype>Lecture</classtype>
-            <dayofweek>Friday</dayofweek>
+            <bookingroom>SW5 1840</bookingroom>
+            <type>Lecture</type>
+            <day>Friday</day>
             <time>830</time>
         </booking>
     </course>
 
-    <course code="COMP 4560">
+    <course code="COMP4560">
         <booking>
             <instructor>Brenda Fine</instructor>
-            <location>SW3 1750</location>
-            <classtype>Lecture</classtype>
-            <dayofweek>Friday</dayofweek>
+            <bookingroom>SW3 1750</bookingroom>
+            <type>Lecture</type>
+            <day>Friday</day>
             <time>1230</time>
         </booking>
     </course>
