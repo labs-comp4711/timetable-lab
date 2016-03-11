@@ -1,0 +1,11 @@
+<order >
+	<burger>
+		<patty></patty>
+		<cheese></cheese>
+		<toppings></toppings>
+		<sauce></sauce>
+	</burger>
+	<eat-in></eat-in>
+	<instructions></instructions>
+	
+</order>
