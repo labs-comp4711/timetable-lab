@@ -147,9 +147,128 @@
                 <time start="0930"></time>
                 <course code="COMP4985"></course>
                 <instructor>Aman Abdulla</instructor>
+                <type>Lab</type>
+            </dayEntry>
+            <dayEntry>
+                <bookingroom>SW1-1205</bookingroom>
+                <time start="1130"></time>
+                <course code="COMP4735"></course>
+                <instructor>Mirela Gutica</instructor>
                 <type>Lecture</type>
             </dayEntry>
+            <dayEntry>
+                <bookingroom>SW9-127</bookingroom>
+                <time start="1230"></time>
+                <course code="BLAW3600"></course>
+                <instructor>Catherine Ryan</instructor>
+                <type>Lab</type>
+            </dayEntry>
+            <dayEntry>
+                <bookingroom>SE12-320</bookingroom>
+                <time start="1530"></time>
+                <course code="COMP4560"></course>
+                <instructor>Brenda Fine</instructor>
+                <type>Lab</type>
+            </dayEntry>           
         </day>
+        <day name="Tuesday">
+            <dayEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <time start="0930"></time>
+                <course code="COMP4981"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lab</type>
+            </dayEntry>
+            <dayEntry>
+                <bookingroom>SW5-1850</bookingroom>
+                <time start="1130"></time>
+                <course code="COMP4560"></course>
+                <instructor>Brenda Fine</instructor>
+                <type>Lecture</type>
+            </dayEntry>
+            <dayEntry>
+                <bookingroom>SW5-1840</bookingroom>
+                <time start="1430"></time>
+                <course code="COMP4711"></course>
+                <instructor>James Perry</instructor>
+                <type>Lecture</type>
+            </dayEntry>
+             <dayEntry>
+                <bookingroom>SE12-321</bookingroom>
+                <time start="1530"></time>
+                <course code="COMP4711"></course>
+                <instructor>James Perry</instructor>
+                <type>Lab</type>
+            </dayEntry>
+        <day name="Wednesday">
+            <dayEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <time start="0930"></time>
+                <course code="COMP4985"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lecture</type>
+            </dayEntry>
+            <dayEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <time start="1130"></time>
+                <course code="COMP4985"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lecture</type>
+            </dayEntry>
+            <dayEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <time start="1230"></time>
+                <course code="COMP4981"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lecture</type>
+            </dayEntry>
+             <dayEntry>
+                <bookingroom>SW1-1205</bookingroom>
+                <time start="1330"></time>
+                <course code="COMP4735"></course>
+                <instructor>Mirela Gutica</instructor>
+                <type>Lecture</type>
+            </dayEntry>                         
+        </day>
+        <day name="Thursday">
+            <dayEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <time start="0930"></time>
+                <course code="COMP4981"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lecture</type>
+            </dayEntry>
+            <dayEntry>
+                <bookingroom>SW3-1710</bookingroom>
+                <time start="1130"></time>
+                <course code="COMP4735"></course>
+                <instructor>Mirela Gutica</instructor>
+                <type>Lecture</type>
+            </dayEntry>
+             <dayEntry>
+                <bookingroom>SE12-322</bookingroom>
+                <time start="1530"></time>
+                <course code="COMP4735"></course>
+                <instructor>Mathew Linder</instructor>
+                <type>Lab</type>
+            </dayEntry>                         
+        </day>
+        <day name="Friday">
+            <dayEntry>
+                <bookingroom>SW5-1840</bookingroom>
+                <time start="0830"></time>
+                <course code="BLAW3600"></course>
+                <instructor>Kevin Wainwright</instructor>
+                <type>Lecture</type>
+            </dayEntry>
+             <dayEntry>
+                <bookingroom>SW3-1750</bookingroom>
+                <time start="1230"></time>
+                <course code="COMP4560"></course>
+                <instructor>Brenda Fine</instructor>
+                <type>Lecture</type>
+            </dayEntry>                         
+        </day>                 
     </days>
 
     <!-- Oscar please complete facet for courses -->
