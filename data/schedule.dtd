@@ -1,31 +1,35 @@
 <!ELEMENT schedule (timeslots, days, courses)>
 
+		<!--Timeslots facet definitions-->
+		<!ELEMENT timeslots (slots*)>
+		<!ELEMENT slots (timeEntry*)>
+			<!ATTLIST slots
+				start (0830|0930|1030|1130|1230|1330|1430|1530) #REQUIRED
+				>
+		<!ELEMENT timeEntry (bookingroom, day, course, instructor, type)>
 
-<!-- time slots
-    slot time="1530"
-     { booking room, day, course, instr, type }
+		<!--Courses facet definition-->
+		<!ELEMENT courses (course*)>
+		<!ELEMENT course (courseEntry*)>
+			<!ATTLIST course
+				code (BLAW3600|COMP4560|COMP4711|COMP4735|COMP4981|COMP4985) #REQUIRED
+				>
+		<!ELEMENT courseEntry (day, time, bookingroom, instructor, type)>
 
-days
-    day code="tuesday"
-    { booking room, time, course, instr, type }
+		<!--Days facet definition-->
+		<!ELEMENT days (day*)>
+		<!ELEMENT day (dayEntry*)>
+		<!ATTLIST day
+				name (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) #REQUIRED
+				>
+		<!ELEMENT dayEntry (bookingroom, time, course, instructor, type)>
 
-courses
-    course name="comp4711"
-     { booking day, time, room, type, instr }
- -->
 
-<!ELEMENT day (bookingroom, time, course, instructor, type)>
-
-<!ATTLIST day
-    code    (sunday|monday|tuesday|wednesday|thursday|friday|saturday) #REQUIRED
->
-
-<!ELEMENT time (#PCDATA)>
-	code (0830|0930|1030|1130|1230|1330|1430|1530)#REQUIRED
->
-
-<!ELEMENT course (#PCDATA)>
-<!ATTLIST course
-    code    (BLAW3600|COMP4560|COMP4711|COMP4735|COMP4981|COMP4985) #REQUIRED
->
+		<!ELEMENT bookingroom (#PCDATA)>
+		<!ELEMENT instructor (#PCDATA)>
+		<!ELEMENT type (#PCDATA)>
+		<!ELEMENT time (#PCDATA)>
+			<!ATTLIST time
+				start (0830|0930|1030|1130|1230|1330|1430|1530) #REQUIRED
+				>
 

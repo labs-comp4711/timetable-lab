@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE schedule SYSTEM "schedule.dtd">
+<schedule>
+
+    <timeslots>
+        <slots start="0830">
+            <timeEntry>
+                <bookingroom>SW5-1840</bookingroom>
+                <day name="Friday"></day>
+                <course code="BLAW3600"></course>
+                <instructor>Catherine Ryan</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+        </slots>
+        <slots start="0930">
+            <timeEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <day name="Monday"></day>
+                <course code="COMP4985"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+            <timeEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <day name="Tuesday"></day>
+                <course code="COMP4981"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+            <timeEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <day name="Wednesday"></day>
+                <course code="COMP4985"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+            <timeEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <day name="Thursday"></day>
+                <course code="COMP4981"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+        </slots>
+        <slots start="1130">
+            <timeEntry>
+                <bookingroom>SW1-1205</bookingroom>
+                <day name="Monday"></day>
+                <course code="COMP4735"></course>
+                <instructor>Mirela Gutica</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+            <timeEntry>
+                <bookingroom>SW5-1850</bookingroom>
+                <day name="Tuesday"></day>
+                <course code="COMP4560"></course>
+                <instructor>Brenda Fine</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+            <timeEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <day name="Wednesday"></day>
+                <course code="COMP4985"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lab</type>
+            </timeEntry>
+            <timeEntry>
+                <bookingroom>SW3-1710</bookingroom>
+                <day name="Thursday"></day>
+                <course code="COMP4735"></course>
+                <instructor>Mirela Gutica</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+        </slots>
+        <slots start="1230">
+            <timeEntry>
+                <bookingroom>NE1-405</bookingroom>
+                <day name="Monday"></day>
+                <course code="BLAW3600"></course>
+                <instructor>Catherine Ryan</instructor>
+                <type>Lab</type>
+            </timeEntry>
+            <timeEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <day name="Wednesday"></day>
+                <course code="COMP4981"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lab</type>
+            </timeEntry>
+            <timeEntry>
+                <bookingroom>SW3-1750</bookingroom>
+                <day name="Thursday"></day>
+                <course code="COMP4560"></course>
+                <instructor>Brenda Fine</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+        </slots>
+        <slots start="1330">
+            <timeEntry>
+                <bookingroom>SW1-1205</bookingroom>
+                <day name="Wednesday"></day>
+                <course code="COMP4735"></course>
+                <instructor>Mirela Gutica</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+        </slots>
+        <slots start="1430">
+            <timeEntry>
+                <bookingroom>SW5-1840</bookingroom>
+                <day name="Tuesday"></day>
+                <course code="COMP4711"></course>
+                <instructor>James Parry</instructor>
+                <type>Lecture</type>
+            </timeEntry>
+        </slots>
+        <slots start="1530">
+            <timeEntry>
+                <bookingroom>SE12-320</bookingroom>
+                <day name="Monday"></day>
+                <course code="COMP4560"></course>
+                <instructor>Joseph Lo</instructor>
+                <type>Lab</type>
+            </timeEntry>
+            <timeEntry>
+                <bookingroom>SE12-321</bookingroom>
+                <day name="Tuesday"></day>
+                <course code="COMP4711"></course>
+                <instructor>James Parry</instructor>
+                <type>Lab</type>
+            </timeEntry>
+            <timeEntry>
+                <bookingroom>SE12-322</bookingroom>
+                <day name="Thursday"></day>
+                <course code="COMP4735"></course>
+                <instructor>Mathew Linder</instructor>
+                <type>Lab</type>
+            </timeEntry>
+        </slots>
+    </timeslots>
+
+    <!-- Thomas please complete facet for days -->
+    <!-- example -->
+    <days>
+        <day name="Monday">
+            <dayEntry>
+                <bookingroom>SE12-323</bookingroom>
+                <time start="0930"></time>
+                <course code="COMP4985"></course>
+                <instructor>Aman Abdulla</instructor>
+                <type>Lecture</type>
+            </dayEntry>
+        </day>
+    </days>
+
+    <!-- Oscar please complete facet for courses -->
+    <!-- example -->
+    <courses>
+        <course code="COMP4711">
+            <courseEntry>
+                <day name="Tuesday"></day>
+                <time start="1430"></time>
+                <bookingroom>SW5-1840</bookingroom>
+                <instructor>James Parry</instructor>
+                <type>Lecture</type>
+            </courseEntry>
+        </course>
+    </courses>
+
+</schedule>
