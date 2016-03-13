@@ -1,0 +1,34 @@
+<!ELEMENT schedule (timeslots, days, courses)>
+
+		<!--Timeslots facet definitions-->
+		<!ELEMENT timeslots (slots*)>
+		<!ELEMENT slots (timeEntry*)>
+			<!ATTLIST slots
+				start (0830|0930|1030|1130|1230|1330|1430|1530) #REQUIRED
+				>
+		<!ELEMENT timeEntry (bookingroom, day, course, instructor, type)>
+
+		<!--Courses facet definition-->
+		<!ELEMENT courses (course*)>
+		<!ELEMENT course (courseEntry*)>
+			<!ATTLIST course
+				code (BLAW3600|COMP4560|COMP4711|COMP4735|COMP4981|COMP4985) #REQUIRED
+				>
+		<!ELEMENT courseEntry (day, time, bookingroom, instructor, type)>
+
+		<!--Days facet definition-->
+		<!ELEMENT days (day*)>
+		<!ELEMENT day (dayEntry*)>
+		<!ATTLIST day
+				name (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) #REQUIRED
+				>
+		<!ELEMENT dayEntry (bookingroom, time, course, instructor, type)>
+
+
+		<!ELEMENT bookingroom (#PCDATA)>
+		<!ELEMENT instructor (#PCDATA)>
+		<!ELEMENT type (#PCDATA)>
+		<!ELEMENT time (#PCDATA)>
+			<!ATTLIST time
+				start (0830|0930|1030|1130|1230|1330|1430|1530) #REQUIRED
+				>
