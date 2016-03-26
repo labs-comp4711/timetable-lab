@@ -10,6 +10,7 @@ class TimeSchedule extends CI_Model {
     protected $xml = null;
     protected $daysofweek = array();
     protected $timeslots = array();
+    protected $courses = array();
     protected $cheeses = array();
     protected $toppings = array();
     protected $sauces = array();
@@ -56,6 +57,18 @@ class TimeSchedule extends CI_Model {
             }
         }
 
+        foreach ($this->xml->courses->course as $course) {
+            foreach ($course->courseEntry as $Entry) {
+                $element = array();
+                $element['course'] = (string) $course['code'];
+                $element['day'] = (string) $Entry->$day ['name'];
+                $element['start'] = (string) $Entry->time['start'];
+                $element['bookingroom'] = (string) $Entry->bookingroom;
+                $element['instructor'] = (string) $Entry->instructor;
+                $element['type'] = (string) $Entry->type;
+            }
+        }
+
     }
 
 
@@ -67,6 +80,11 @@ class TimeSchedule extends CI_Model {
     // retrieve list of timeslots
     function getTimeslots(){
         return $this->timeslots;
+    }
+
+    // retreive list of courses
+    function getCourses() {
+        return $this->courses;
     }
 
     function getTimeslotForDropdown(){
