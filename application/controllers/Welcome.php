@@ -11,8 +11,8 @@ class Welcome extends Application {
 
     function __construct() {
         parent::__construct();
-        $this->load->model('menu');
-        $this->load->model('order');
+        $this->load->model('TimeSchedule');
+        //$this->load->model('order');
     }
 
     //-------------------------------------------------------------
@@ -21,19 +21,10 @@ class Welcome extends Application {
 
     function index() {
         // Build a list of orders
-        $this->load->helper('directory');
-        $candidates = directory_map(DATAPATH);
-        sort($candidates);
-        foreach ($candidates as $file) {
-            if (substr_compare($file, XMLSUFFIX, strlen($file) - strlen(XMLSUFFIX), strlen(XMLSUFFIX)) === 0)
-            // exclude our menu
-                if ($file != 'menu.xml')
-                // trim the suffix
-                    $orders[] = array('filename' => substr($file, 0, -4));
-        }
-        $this->data['orders'] = $orders;
 
-        // Present the list to choose from
+        $this->data["daysofweek"] = $this->TimeSchedule->getDays();
+        $temp=$this->TimeSchedule->getDays();
+        var_dump($temp);
         $this->data['pagebody'] = 'homepage';
         $this->render();
     }
