@@ -68,6 +68,31 @@ class TimeSchedule extends CI_Model {
     function getTimeslots(){
         return $this->timeslots;
     }
+
+    function getTimeslotForDropdown(){
+        $array = array();
+        $array[0] = "830";
+        $array[1] = "930";
+        $array[2] = "1030";
+        $array[3] = "1130";
+        $array[4] = "1230";
+        $array[5] = "1330";
+        $array[6] = "1430";
+        $array[7] = "1530";
+
+        return $array;
+    }
+
+    function getDayForDropdown(){
+        $array = array();
+        $array[0] = "Monday";
+        $array[1] = "Tuesday";
+        $array[2] = "Wednesday";
+        $array[3] = "Thursday";
+        $array[4] = "Friday";
+
+        return $array;
+    }
     
 }
 class Booking extends CI_Model {

@@ -35,6 +35,11 @@ class Welcome extends Application {
         $this->render();
     }
 
+    function search(){
+
+    }
+
+
     //-------------------------------------------------------------
     //  Show the "receipt" for a specific order
     //-------------------------------------------------------------

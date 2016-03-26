@@ -25,6 +25,7 @@ class Application extends CI_Controller {
         $this->data['title'] = "Schedule Lab";    // our default title
         $this->errors = array();
         $this->data['pageTitle'] = 'welcome';   // our default page
+        $this->data['search'] = $this->initDropdown();
     }
 
     /**
@@ -35,6 +36,19 @@ class Application extends CI_Controller {
 
         // finally, build the browser page!
         $this->parser->parse('_template', $this->data);
+    }
+
+    //create dropdown
+    function initDropdown(){
+        $data = array();
+        $data['timeslotsDropdown'] = form_dropdown('timeslots', $this->timeschedule->getTimeslotForDropdown());
+        $data['daysDropdown'] = form_dropdown('days', $this->timeschedule->getDayForDropdown());
+
+//        $temp = $this->timeschedule->getTimeslotForDropdown();
+//        var_dump($temp);
+
+        return $this->parser->parse('search', $data, true);
+
     }
 
 }
