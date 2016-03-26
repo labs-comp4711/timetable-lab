@@ -89,7 +89,7 @@
             </timeEntry>
             <timeEntry>
                 <bookingroom>SW3-1750</bookingroom>
-                <day name="Thursday"></day>
+                <day name="Friday"></day>
                 <course code="COMP4560"></course>
                 <instructor>Brenda Fine</instructor>
                 <type>Lecture</type>

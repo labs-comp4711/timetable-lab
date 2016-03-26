@@ -10,6 +10,15 @@
     	</br>
     {/daysofweek}
 
-    <p>Select an order from the list above to see its receipt.</p>
-        
+	<h2>Timeslots</h2>
+	{timeslots}
+		{day}
+		{start}
+		{coursename}
+		{instructor}
+		{location}
+		{classtype}
+		</br>
+	{/timeslots}
+
 </div>

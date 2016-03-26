@@ -23,8 +23,14 @@ class Welcome extends Application {
         // Build a list of orders
 
         $this->data["daysofweek"] = $this->TimeSchedule->getDays();
-        $temp=$this->TimeSchedule->getDays();
-        var_dump($temp);
+//        $temp=$this->TimeSchedule->getDays();
+//        var_dump($temp);
+
+        $this->data['timeslots'] = $this->TimeSchedule->getTimeslots();
+
+//        $temp2=$this->TimeSchedule->getTimeslots();
+//        var_dump($temp2);
+
         $this->data['pagebody'] = 'homepage';
         $this->render();
     }
