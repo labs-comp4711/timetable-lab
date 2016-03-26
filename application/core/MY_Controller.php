@@ -22,7 +22,7 @@ class Application extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->data = array();
-        $this->data['title'] = "Barker Bob's Burger Bar";    // our default title
+        $this->data['title'] = "Schedule Lab";    // our default title
         $this->errors = array();
         $this->data['pageTitle'] = 'welcome';   // our default page
     }
