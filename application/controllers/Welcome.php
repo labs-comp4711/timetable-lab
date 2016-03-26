@@ -28,6 +28,7 @@ class Welcome extends Application {
 
         $this->data['timeslots'] = $this->TimeSchedule->getTimeslots();
 
+        $this->data['courses'] = $this->TimeSchedule->getCourses();
 //        $temp2=$this->TimeSchedule->getTimeslots();
 //        var_dump($temp2);
 

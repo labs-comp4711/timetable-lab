@@ -21,4 +21,12 @@
 		</br>
 	{/timeslots}
 
+	<h2>Courses</h2>
+	{courses}
+		{day}
+		{start}
+		{location}
+		{instructor}
+		{classtype}
+	{/courses}
 </div>
