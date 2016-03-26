@@ -9,6 +9,7 @@ class TimeSchedule extends CI_Model {
 
     protected $xml = null;
     protected $daysofweek = array();
+    protected $timeslots = array();
     protected $cheeses = array();
     protected $toppings = array();
     protected $sauces = array();
@@ -39,12 +40,33 @@ class TimeSchedule extends CI_Model {
                 $this->daysofweek[] = new Booking($element);
             }
         }
+
+        // building as timeslots
+        foreach ($this->xml->timeslots->slots as $slot){
+            foreach ($slot->timeEntry as $Entry){
+                $element = array();
+                $element['start'] = (string) $slot['start'];
+                $element['bookingroom'] = (string) $Entry->bookingroom;
+                $element['day'] = (string) $Entry->day['name'];
+                $element['code'] = (string) $Entry->course['code'];
+                $element['instructor'] = (string) $Entry->instructor;
+                $element['type'] = (string) $Entry->type;
+
+                $this->timeslots[] = new Booking($element);
+            }
+        }
+
     }
 
 
     // retrieve a list of days, to populate a dropdown, for instance
     function getDays() {
         return $this->daysofweek;
+    }
+
+    // retrieve list of timeslots
+    function getTimeslots(){
+        return $this->timeslots;
     }
     
 }
