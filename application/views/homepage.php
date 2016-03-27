@@ -1,5 +1,10 @@
 <div class="row">
     <h2>Timetables!</h2>
+
+	<h2>Search:</h2>
+	{search}
+
+	<h2>Days of Week</h2>
     {daysofweek}
     	{day}
     	{start}
@@ -25,8 +30,12 @@
 	{courses}
 		{day}
 		{start}
-		{location}
+		{coursename}
 		{instructor}
+		{location}
 		{classtype}
+		</br>
 	{/courses}
+
+
 </div>

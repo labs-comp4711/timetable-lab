@@ -32,9 +32,6 @@ if (!defined('APPPATH'))
                 {content}
 
             </div>
-            <div>
-                {search}
-            </div>
             <div id="footer" class="span12">
                 Copyright &copy; 2014-2015,  <a href="mailto:someone@somewhere.com">Me</a>.
             </div>
