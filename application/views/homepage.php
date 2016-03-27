@@ -1,10 +1,41 @@
 <div class="row">
-    <h2>Burger Bonanza Orders</h2>
+    <h2>Timetables!</h2>
 
-    {orders}
-    <p><a href="/welcome/order/{filename}">{filename}</a></p>
-    {/orders}
-    
-    <p>Select an order from the list above to see its receipt.</p>
-        
+	<h2>Search:</h2>
+	{search}
+
+	<h2>Days of Week</h2>
+    {daysofweek}
+    	{day}
+    	{start}
+    	{coursename}
+    	{instructor}
+    	{location}
+    	{classtype}
+    	</br>
+    {/daysofweek}
+
+	<h2>Timeslots</h2>
+	{timeslots}
+		{day}
+		{start}
+		{coursename}
+		{instructor}
+		{location}
+		{classtype}
+		</br>
+	{/timeslots}
+
+	<h2>Courses</h2>
+	{courses}
+		{day}
+		{start}
+		{coursename}
+		{instructor}
+		{location}
+		{classtype}
+		</br>
+	{/courses}
+
+
 </div>

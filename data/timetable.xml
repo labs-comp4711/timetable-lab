@@ -8,7 +8,7 @@
                 <bookingroom>SW5-1840</bookingroom>
                 <day name="Friday"></day>
                 <course code="BLAW3600"></course>
-                <instructor>Catherine Ryan</instructor>
+                <instructor>Kevin Wainwright</instructor>
                 <type>Lecture</type>
             </timeEntry>
         </slots>
@@ -68,7 +68,7 @@
                 <bookingroom>SW3-1710</bookingroom>
                 <day name="Thursday"></day>
                 <course code="COMP4735"></course>
-                <instructor>Mirela Gutica</instructor>
+                <instructor>Mathew Linder</instructor>
                 <type>Lecture</type>
             </timeEntry>
         </slots>
@@ -77,7 +77,7 @@
                 <bookingroom>SW9-127</bookingroom>
                 <day name="Monday"></day>
                 <course code="BLAW3600"></course>
-                <instructor>Catherine Ryan</instructor>
+                <instructor>Kevin Wainwright</instructor>
                 <type>Lab</type>
             </timeEntry>
             <timeEntry>
@@ -89,7 +89,7 @@
             </timeEntry>
             <timeEntry>
                 <bookingroom>SW3-1750</bookingroom>
-                <day name="Thursday"></day>
+                <day name="Friday"></day>
                 <course code="COMP4560"></course>
                 <instructor>Brenda Fine</instructor>
                 <type>Lecture</type>
@@ -138,6 +138,7 @@
         </slots>
     </timeslots>
 
+
     <!-- Thomas please complete facet for days -->
     <!-- example -->
     <days>
@@ -160,7 +161,7 @@
                 <bookingroom>SW9-127</bookingroom>
                 <time start="1230"></time>
                 <course code="BLAW3600"></course>
-                <instructor>Catherine Ryan</instructor>
+                <instructor>Kevin Wainwright</instructor>
                 <type>Lab</type>
             </dayEntry>
             <dayEntry>
@@ -243,7 +244,7 @@
                 <bookingroom>SW3-1710</bookingroom>
                 <time start="1130"></time>
                 <course code="COMP4735"></course>
-                <instructor>Mirela Gutica</instructor>
+                <instructor>Mathew Linder</instructor>
                 <type>Lecture</type>
             </dayEntry>
              <dayEntry>
@@ -278,14 +279,14 @@
                 <day name="Monday"></day>
                 <time start="1230"></time>
                 <bookingroom>SW9-127</bookingroom>
-                <instructor>Catherine Ryan</instructor>
+                <instructor>Kevin Wainwright</instructor>
                 <type>Lab</type>
             </courseEntry>
             <courseEntry>
                 <day name="Friday"></day>
                 <time start="0830"></time>
                 <bookingroom>SW5-1840</bookingroom>
-                <instructor>Catherine Ryan</instructor>
+                <instructor>Kevin Wainwright</instructor>
                 <type>Lecture</type>
             </courseEntry>
         </course>
@@ -308,7 +309,7 @@
                 <day name="Thursday"></day>
                 <time start="1530"></time>
                 <bookingroom>SE12-322</bookingroom>
-                <instructor>Matthew Linder</instructor>
+                <instructor>Mathew Linder</instructor>
                 <type>Lab</type>
             </courseEntry>
         </course>
