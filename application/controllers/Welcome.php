@@ -50,19 +50,26 @@ class Welcome extends Application {
         $courseResults = $this->TimeSchedule->searchCourses($timeslotSelected, $daySelected);
 
 
-        if(count($dayResults) == 1 && count($timeslotResults) == 1 && count($courseResults) == 1){    
+        if(count($dayResults) == 1 && count($timeslotResults) == 1 && count($courseResults) == 1){
             if($dayResults==$timeslotResults && $dayResults==$courseResults && $courseResults==$timeslotResults){
                 $this->data['dayinfo']=$dayResults;
                 $this->data['timeinfo']=$timeslotResults;
                 $this->data['courseinfo']=$courseResults;
                 $this->render();
-            } 
+            } else //Bad Search result, load error page
+            {
+                $this->data['pagebody']='errorsearch';
+                $this->data['dayinfo']=$dayResults;
+                $this->data['timeinfo']=$timeslotResults;
+                $this->data['courseinfo']=$courseResults;
+                $this->render();
+            }
         } else //Bad Search result, load error page
         {
+            $this->data['pagebody']='errorsearch';
             $this->data['dayinfo']=$dayResults;
             $this->data['timeinfo']=$timeslotResults;
             $this->data['courseinfo']=$courseResults;
-            $this->data['pagebody']='errorsearch';  
             $this->render();
         }
     }
