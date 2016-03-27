@@ -11,9 +11,6 @@ class TimeSchedule extends CI_Model {
     protected $daysofweek = array();
     protected $timeslots = array();
     protected $courses = array();
-    protected $cheeses = array();
-    protected $toppings = array();
-    protected $sauces = array();
 
     // Constructor
     public function __construct() {
