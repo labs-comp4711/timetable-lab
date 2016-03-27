@@ -30,11 +30,12 @@ class Welcome extends Application {
 
         $this->data['courses'] = $this->TimeSchedule->getCourses();
 
-        $this->data['pagebody'] = 'homepage';
+        $this->data['pagebody']='homepage';
         $this->render();
     }
 
     function search(){
+        $this->data['pagebody']='searchresults';
         $timeslotSelected = $this->input->post('timeslots');
         $daySelected = $this->input->post('days');
 
@@ -48,13 +49,21 @@ class Welcome extends Application {
         $timeslotResults = $this->TimeSchedule->searchTimeslots($timeslotSelected, $daySelected);
         $courseResults = $this->TimeSchedule->searchCourses($timeslotSelected, $daySelected);
 
-        var_dump($dayResults);
-        var_dump($timeslotResults);
-        var_dump($courseResults);
 
-        //check that the search returned only one booking for each facet
-        if(count($dayResults) == 1 && count($timeslotResults) == 1 && count($courseResults) == 1){
-
+        if(count($dayResults) == 1 && count($timeslotResults) == 1 && count($courseResults) == 1){    
+            if($dayResults==$timeslotResults && $dayResults==$courseResults && $courseResults==$timeslotResults){
+                $this->data['dayinfo']=$dayResults;
+                $this->data['timeinfo']=$timeslotResults;
+                $this->data['courseinfo']=$courseResults;
+                $this->render();
+            } 
+        } else //Bad Search result, load error page
+        {
+            $this->data['dayinfo']=$dayResults;
+            $this->data['timeinfo']=$timeslotResults;
+            $this->data['courseinfo']=$courseResults;
+            $this->data['pagebody']='errorsearch';  
+            $this->render();
         }
     }
 }
