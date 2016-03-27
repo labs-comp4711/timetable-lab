@@ -25,8 +25,12 @@
 	{courses}
 		{day}
 		{start}
-		{location}
+		{coursename}
 		{instructor}
+		{location}
 		{classtype}
+		</br>
 	{/courses}
+
+	{search}
 </div>

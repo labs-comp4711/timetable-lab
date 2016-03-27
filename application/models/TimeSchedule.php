@@ -60,15 +60,16 @@ class TimeSchedule extends CI_Model {
         foreach ($this->xml->courses->course as $course) {
             foreach ($course->courseEntry as $Entry) {
                 $element = array();
-                $element['course'] = (string) $course['code'];
-                $element['day'] = (string) $Entry->$day ['name'];
+                $element['code'] = (string) $course['code'];
+                $element['day'] = (string) $Entry->day['name'];
                 $element['start'] = (string) $Entry->time['start'];
                 $element['bookingroom'] = (string) $Entry->bookingroom;
                 $element['instructor'] = (string) $Entry->instructor;
                 $element['type'] = (string) $Entry->type;
+
+                $this->courses[] = new Booking($element);
             }
         }
-
     }
 
 
@@ -89,8 +90,8 @@ class TimeSchedule extends CI_Model {
 
     function getTimeslotForDropdown(){
         $array = array();
-        $array[0] = "830";
-        $array[1] = "930";
+        $array[0] = "0830";
+        $array[1] = "0930";
         $array[2] = "1030";
         $array[3] = "1130";
         $array[4] = "1230";
@@ -111,7 +112,43 @@ class TimeSchedule extends CI_Model {
 
         return $array;
     }
-    
+
+    function searchDays($timeslot, $day){
+
+        $results = array();
+
+        foreach($this->daysofweek as $booking){
+            if($booking->start == $timeslot && $booking->day == $day){
+                $results[] = $booking;
+            }
+        }
+        return $results;
+    }
+
+    function searchTimeslots($timeslot, $day){
+
+        $results = array();
+
+        foreach($this->timeslots as $booking){
+            if($booking->start == $timeslot && $booking->day == $day){
+                $results[] = $booking;
+            }
+        }
+        return $results;
+    }
+
+    function searchCourses($timeslot, $day){
+
+        $results = array();
+
+        foreach($this->courses as $booking){
+            if($booking->start == $timeslot && $booking->day == $day){
+                $results[] = $booking;
+            }
+        }
+        return $results;
+    }
+
 }
 class Booking extends CI_Model {
     public $day;
